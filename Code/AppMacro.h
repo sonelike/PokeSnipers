@@ -12,7 +12,6 @@
 \
 + (instancetype)getInstance;
 
-
 #define SINGLETON_FOR_CLASS \
 \
 + (instancetype)getInstance { \

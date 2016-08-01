@@ -27,12 +27,12 @@ SINGLETON_FOR_CLASS
 }
 
 + (void)getPokemonListSuccess:(void (^)(PokemonList *list))success failure:(void (^)(NSString *errorMsg))failure {
-    [[HTTPSessionManager getInstance].manager GET:pokeSnipersAPI parameters:nil progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+    [[HTTPSessionManager getInstance].manager GET:pokeSnipersAPI parameters:nil progress:nil success:^(NSURLSessionDataTask *task, id responseObject) {
         PokemonList *list = [PokemonList mj_objectWithKeyValues:responseObject];
         if (success) {
             success(list);
         }
-    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+    } failure:^(NSURLSessionDataTask *task, NSError *error) {
         if (failure) {
             failure(error.localizedDescription);
         }

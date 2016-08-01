@@ -8,11 +8,11 @@
 
 #import "MainTableViewController.h"
 
+#import "HTTPSessionManager.h"
+#import "PokemonCell.h"
 #import <MJRefresh.h>
 #import <SVProgressHUD.h>
 #import <UIImageView+WebCache.h>
-#import "HTTPSessionManager.h"
-#import "PokemonCell.h"
 
 @interface MainTableViewController () <UITableViewDataSource, UITableViewDelegate>
 @property (strong, nonatomic) NSArray *results;

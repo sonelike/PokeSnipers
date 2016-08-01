@@ -11,7 +11,7 @@
 @implementation PokemonList
 
 + (NSDictionary *)mj_objectClassInArray {
-    return @{@"results" : @"Pokemon"};
+    return @{ @"results" : @"Pokemon" };
 }
 
 MJLogAllIvars
