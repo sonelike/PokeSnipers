@@ -1,0 +1,419 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1E98B019055A5AB14B263410 /* libPods-PokeSnipers.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A6F9C84D179824289F17828 /* libPods-PokeSnipers.a */; };
+		36C193871D4F475F002112EA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 36C193751D4F475F002112EA /* AppDelegate.m */; };
+		36C193881D4F475F002112EA /* HTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 36C193781D4F475F002112EA /* HTTPSessionManager.m */; };
+		36C193891D4F475F002112EA /* MainTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 36C1937A1D4F475F002112EA /* MainTableViewController.m */; };
+		36C1938A1D4F475F002112EA /* Pokemon.m in Sources */ = {isa = PBXBuildFile; fileRef = 36C1937D1D4F475F002112EA /* Pokemon.m */; };
+		36C1938B1D4F475F002112EA /* PokemonList.m in Sources */ = {isa = PBXBuildFile; fileRef = 36C1937F1D4F475F002112EA /* PokemonList.m */; };
+		36C1938C1D4F475F002112EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 36C193811D4F475F002112EA /* Assets.xcassets */; };
+		36C1938D1D4F475F002112EA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36C193821D4F475F002112EA /* LaunchScreen.storyboard */; };
+		36C1938F1D4F475F002112EA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 36C193851D4F475F002112EA /* main.m */; };
+		36C193911D4F48E6002112EA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36C193901D4F48E6002112EA /* Main.storyboard */; };
+		36C193941D4F499F002112EA /* PokemonCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 36C193931D4F499F002112EA /* PokemonCell.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		36C193591D4F4384002112EA /* PokeSnipers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PokeSnipers.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		36C193741D4F475F002112EA /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		36C193751D4F475F002112EA /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		36C193761D4F475F002112EA /* AppMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppMacro.h; sourceTree = "<group>"; };
+		36C193771D4F475F002112EA /* HTTPSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPSessionManager.h; sourceTree = "<group>"; };
+		36C193781D4F475F002112EA /* HTTPSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTPSessionManager.m; sourceTree = "<group>"; };
+		36C193791D4F475F002112EA /* MainTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainTableViewController.h; sourceTree = "<group>"; };
+		36C1937A1D4F475F002112EA /* MainTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainTableViewController.m; sourceTree = "<group>"; };
+		36C1937C1D4F475F002112EA /* Pokemon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Pokemon.h; sourceTree = "<group>"; };
+		36C1937D1D4F475F002112EA /* Pokemon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Pokemon.m; sourceTree = "<group>"; };
+		36C1937E1D4F475F002112EA /* PokemonList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PokemonList.h; sourceTree = "<group>"; };
+		36C1937F1D4F475F002112EA /* PokemonList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PokemonList.m; sourceTree = "<group>"; };
+		36C193811D4F475F002112EA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		36C193831D4F475F002112EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		36C193841D4F475F002112EA /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		36C193851D4F475F002112EA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		36C193861D4F475F002112EA /* Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Prefix.pch; sourceTree = "<group>"; };
+		36C193901D4F48E6002112EA /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		36C193921D4F499F002112EA /* PokemonCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PokemonCell.h; sourceTree = "<group>"; };
+		36C193931D4F499F002112EA /* PokemonCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PokemonCell.m; sourceTree = "<group>"; };
+		5A6F9C84D179824289F17828 /* libPods-PokeSnipers.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PokeSnipers.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		71AE2506CE8DD041A53B6F44 /* Pods-PokeSnipers.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PokeSnipers.release.xcconfig"; path = "Pods/Target Support Files/Pods-PokeSnipers/Pods-PokeSnipers.release.xcconfig"; sourceTree = "<group>"; };
+		8A56E4AC8B417311E147CE95 /* Pods-PokeSnipers.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PokeSnipers.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PokeSnipers/Pods-PokeSnipers.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		36C193561D4F4384002112EA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1E98B019055A5AB14B263410 /* libPods-PokeSnipers.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		36C193501D4F4384002112EA = {
+			isa = PBXGroup;
+			children = (
+				36C193731D4F475F002112EA /* Code */,
+				36C1935A1D4F4384002112EA /* Products */,
+				7F971B054A7A24B125131713 /* Pods */,
+				B2ABEB6D07DE8085EFDD0544 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		36C1935A1D4F4384002112EA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				36C193591D4F4384002112EA /* PokeSnipers.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		36C193731D4F475F002112EA /* Code */ = {
+			isa = PBXGroup;
+			children = (
+				36C193741D4F475F002112EA /* AppDelegate.h */,
+				36C193751D4F475F002112EA /* AppDelegate.m */,
+				36C193761D4F475F002112EA /* AppMacro.h */,
+				36C193771D4F475F002112EA /* HTTPSessionManager.h */,
+				36C193781D4F475F002112EA /* HTTPSessionManager.m */,
+				36C193791D4F475F002112EA /* MainTableViewController.h */,
+				36C1937A1D4F475F002112EA /* MainTableViewController.m */,
+				36C193921D4F499F002112EA /* PokemonCell.h */,
+				36C193931D4F499F002112EA /* PokemonCell.m */,
+				36C193901D4F48E6002112EA /* Main.storyboard */,
+				36C1937B1D4F475F002112EA /* Model */,
+				36C193801D4F475F002112EA /* Supporting Files */,
+			);
+			path = Code;
+			sourceTree = "<group>";
+		};
+		36C1937B1D4F475F002112EA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				36C1937C1D4F475F002112EA /* Pokemon.h */,
+				36C1937D1D4F475F002112EA /* Pokemon.m */,
+				36C1937E1D4F475F002112EA /* PokemonList.h */,
+				36C1937F1D4F475F002112EA /* PokemonList.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		36C193801D4F475F002112EA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				36C193811D4F475F002112EA /* Assets.xcassets */,
+				36C193821D4F475F002112EA /* LaunchScreen.storyboard */,
+				36C193841D4F475F002112EA /* Info.plist */,
+				36C193851D4F475F002112EA /* main.m */,
+				36C193861D4F475F002112EA /* Prefix.pch */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7F971B054A7A24B125131713 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8A56E4AC8B417311E147CE95 /* Pods-PokeSnipers.debug.xcconfig */,
+				71AE2506CE8DD041A53B6F44 /* Pods-PokeSnipers.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B2ABEB6D07DE8085EFDD0544 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5A6F9C84D179824289F17828 /* libPods-PokeSnipers.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		36C193581D4F4384002112EA /* PokeSnipers */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 36C193701D4F4384002112EA /* Build configuration list for PBXNativeTarget "PokeSnipers" */;
+			buildPhases = (
+				0558719491951A70618ACF32 /* [CP] Check Pods Manifest.lock */,
+				36C193551D4F4384002112EA /* Sources */,
+				36C193561D4F4384002112EA /* Frameworks */,
+				36C193571D4F4384002112EA /* Resources */,
+				3165898F9ED14F96E7B7E0AF /* [CP] Embed Pods Frameworks */,
+				02656095237105C3F93E88C3 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PokeSnipers;
+			productName = PokeSnipers;
+			productReference = 36C193591D4F4384002112EA /* PokeSnipers.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		36C193511D4F4384002112EA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = philamlife;
+				TargetAttributes = {
+					36C193581D4F4384002112EA = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 36C193541D4F4384002112EA /* Build configuration list for PBXProject "PokeSnipers" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 36C193501D4F4384002112EA;
+			productRefGroup = 36C1935A1D4F4384002112EA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				36C193581D4F4384002112EA /* PokeSnipers */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		36C193571D4F4384002112EA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				36C1938C1D4F475F002112EA /* Assets.xcassets in Resources */,
+				36C1938D1D4F475F002112EA /* LaunchScreen.storyboard in Resources */,
+				36C193911D4F48E6002112EA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		02656095237105C3F93E88C3 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PokeSnipers/Pods-PokeSnipers-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		0558719491951A70618ACF32 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		3165898F9ED14F96E7B7E0AF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PokeSnipers/Pods-PokeSnipers-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		36C193551D4F4384002112EA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				36C193881D4F475F002112EA /* HTTPSessionManager.m in Sources */,
+				36C1938A1D4F475F002112EA /* Pokemon.m in Sources */,
+				36C193871D4F475F002112EA /* AppDelegate.m in Sources */,
+				36C193891D4F475F002112EA /* MainTableViewController.m in Sources */,
+				36C1938F1D4F475F002112EA /* main.m in Sources */,
+				36C1938B1D4F475F002112EA /* PokemonList.m in Sources */,
+				36C193941D4F499F002112EA /* PokemonCell.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		36C193821D4F475F002112EA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				36C193831D4F475F002112EA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		36C1936E1D4F4384002112EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		36C1936F1D4F4384002112EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		36C193711D4F4384002112EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8A56E4AC8B417311E147CE95 /* Pods-PokeSnipers.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Code/Supporting Files/Prefix.pch";
+				INFOPLIST_FILE = "Code/Supporting Files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.philamlife.PokeSnipers;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		36C193721D4F4384002112EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 71AE2506CE8DD041A53B6F44 /* Pods-PokeSnipers.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Code/Supporting Files/Prefix.pch";
+				INFOPLIST_FILE = "Code/Supporting Files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.philamlife.PokeSnipers;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		36C193541D4F4384002112EA /* Build configuration list for PBXProject "PokeSnipers" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				36C1936E1D4F4384002112EA /* Debug */,
+				36C1936F1D4F4384002112EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		36C193701D4F4384002112EA /* Build configuration list for PBXNativeTarget "PokeSnipers" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				36C193711D4F4384002112EA /* Debug */,
+				36C193721D4F4384002112EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 36C193511D4F4384002112EA /* Project object */;
+}
